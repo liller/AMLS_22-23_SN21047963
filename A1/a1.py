@@ -1,45 +1,26 @@
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-import seaborn as sns
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
-
 from Modules.plot_result import plot_history, plot_confusion_matrix
-
-
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix,accuracy_score
+from sklearn.metrics import accuracy_score
 from sklearn.svm import SVC
-import itertools
-
-import tensorflow as tf
-
-from keras.preprocessing import image
-
-from keras.preprocessing.image import array_to_img, img_to_array, load_img
-# import scipy.misc
-from keras import optimizers
-from keras.utils.np_utils import to_categorical # convert to one-hot-encoding
 from keras.models import Sequential, Model
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D
 from keras.optimizers import RMSprop
-from keras.callbacks import ReduceLROnPlateau,EarlyStopping
-# from keras.callbacks import EarlyStopping
+
 
 
 class A1_CNN:
     def __init__(self):
         # Set the CNN model
-        # my CNN architechture is In -> [[Conv2D->relu]*2 -> MaxPool2D -> Dropout]*2 -> Flatten -> Dense -> Dropout -> Out
         print("Construct CNN model =====")
         self.model = Sequential([
             Conv2D(filters=32, kernel_size=(5, 5), padding='Same',activation='relu', input_shape=(218, 178, 3)),
             Conv2D(filters=32, kernel_size=(5, 5), padding='Same',activation='relu'),
             MaxPool2D(pool_size=(2, 2)),
-            # 每一个神经元被丢弃的概率
+            #  Probability of each neuron being discarded
             Dropout(0.25),
             Conv2D(filters=64, kernel_size=(3, 3), padding='Same',activation='relu'),
             Conv2D(filters=64, kernel_size=(3, 3), padding='Same',activation='relu'),

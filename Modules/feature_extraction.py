@@ -22,7 +22,7 @@ img_path = './Datasets/cartoon_set/img/'
 img_path_test = './Datasets/cartoon_set_test/img/'
 csv_path_cartoon = './Datasets/cartoon_set/labels.csv'
 predictor_path = './shape_predictor_68_face_landmarks.dat'
-#人脸识别模型
+#Face recognition models
 face_rec_model_path = './dlib_face_recognition_resnet_model_v1.dat'
 
 detector = dlib.get_frontal_face_detector() #a detector to find the faces
@@ -50,27 +50,26 @@ def feature_extract(target_column, train_ratio = 0.90, random_seed = 3, predicto
     for i in range(len(f_names)):
         img = cv2.imread(f_names[i])
         det_sample = detector(img, 0)
-        #   det_sample:  rectangles[[(45, 93) (131, 179)], [(-27, 5) (53, 77)]]
-        # 有的样本未能识别出脸 需要先过滤
+        #det_sample:  rectangles[[(45, 93) (131, 179)], [(-27, 5) (53, 77)]]
+        # Some samples fail to recognise faces and need to be filtered first
         if len(det_sample) != 0:
-            # 如果识别出一个脸，生成一组x1y1x2y2，两个脸则生成两组，需要剔除掉脏数据
+            # If one face is recognized, a set of x1y1x2y2 is generated, and two faces generate two sets, and dirty data needs to be eliminated
             if len(det_sample) != 2:
                 for k, d in enumerate(det_sample):
                     # Get the landmarks/parts for the face in box d
                     shape = shape_pre(img, d)
                     face_des = face_rec.compute_face_descriptor(img, shape)
                     face_descriptor.append(face_des)
-                    landmark = np.matrix([[p.x, p.y] for p in shape.parts()])  # 可以把关键点转换成shape为(68,2)的矩阵
+                    landmark = np.matrix([[p.x, p.y] for p in shape.parts()])  # The key points can be converted into a matrix with a shape of (68,2)
                     #             print(landmark)
                     landmarks.append(landmark)
             else:
-                print('exist')
-                # 2522 有两个脸
+                # print('exist')
                 for k, d in enumerate(det_sample):
                     shape = shape_pre(img, d)
                     face_des = face_rec.compute_face_descriptor(img, shape)
                     face_descriptor.append(face_des)
-                    landmark = np.matrix([[p.x, p.y] for p in shape.parts()])  # 可以把关键点转换成shape为(68,2)的矩阵
+                    landmark = np.matrix([[p.x, p.y] for p in shape.parts()])  # The key points can be converted into a matrix with a shape of (68,2)
                     #             print(landmark)
                     landmarks.append(landmark)
                     break
@@ -79,15 +78,15 @@ def feature_extract(target_column, train_ratio = 0.90, random_seed = 3, predicto
 
     face_smile1 = np.array(face_smile)
     face_gender1 = np.array(face_gender)
-    print(face_smile1.shape)
-    print(face_gender1.shape)
+    # print(face_smile1.shape)
+    # print(face_gender1.shape)
 
     face_descriptor1 = np.array(face_descriptor)
-    print(face_descriptor1.shape)
+    # print(face_descriptor1.shape)
 
     landmarks1 = np.array(landmarks)
     landmarks1 = np.array(landmarks1).reshape(len(landmarks1), -1)
-    print(landmarks1.shape)
+    # print(landmarks1.shape)
 
     if target_column == 'gender':
         x_train, x_test, y_train, y_test = train_test_split(face_descriptor1, face_gender1, test_size=1 - train_ratio,
@@ -98,9 +97,9 @@ def feature_extract(target_column, train_ratio = 0.90, random_seed = 3, predicto
     if predictor == True:
         x_train, x_test, y_train, y_test = train_test_split(landmarks1, face_smile1, test_size=1 - train_ratio,
                                                             random_state=random_seed)
-    print(len(x_train))
-    print(len(x_test))
-    print(len(y_train))
+    # print(len(x_train))
+    # print(len(x_test))
+    # print(len(y_train))
     return x_train, y_train, x_test, y_test
 
 
@@ -108,8 +107,8 @@ def feature_extract_dir(predictor = False):
     print('# ===== Loading and extracting features =====')
     labels = pd.read_csv(csv_path_cartoon,sep='\t',usecols=[1,2,3],header=0)
     # List of all the images within the training and testing folders
-    # 将训练集 测试集中的地址列表遍历,分别得到按照路径下图片顺序序号的一个列表
-    # labels['file_name'] == i返回对应的index,因此遍历地址列表后可以返回对应的每个地址在label（df）中的index
+    # Iterate through the list of addresses in the training set, the test set, and obtain a list of images in the order of the paths, respectively
+    # labels['file_name'] == i return the corresponding index, so after traversing the list of addresses you can return the index of each address in the label (df)
     test_index = [labels[labels['file_name'] == i].index[0]
                   for i in os.listdir(img_path_test)]
     training_index = [labels[labels['file_name'] == i].index[0]
@@ -123,21 +122,21 @@ def feature_extract_dir(predictor = False):
     face_shape_train = []
     eye_color_train = []
 
-    # 读df
+    # read df
     for i in training_index:
         f_name = img_path + labels.loc[i]['file_name']
         f_names.append(f_name)
         num.append(labels[labels.file_name == labels.loc[i]['file_name']].index.tolist()[0])
-    print(len(f_names))
+    # print(len(f_names))
 
     for i in range(len(f_names)):
         img = cv2.imread(f_names[i])
-        # 先检测脸 返回一个/多个脸
+        # Detect face f Return one/multiple faces
         det_sample = detector(img, 0)
         #   det_sample:  rectangles[[(45, 93) (131, 179)], [(-27, 5) (53, 77)]]
-        # 有的样本未能识别出脸 需要先过滤
+        # Detect face f Return one/multiple faces
         if len(det_sample) != 0:
-            # 如果识别出一个脸，生成一组x1y1x2y2，两个脸则生成两组，需要剔除掉脏数据
+            # If one face is recognized, a set of x1y1x2y2 is generated, and two faces generate two sets, and dirty data needs to be eliminated
             for k, d in enumerate(det_sample):
                 # Get the landmarks/parts for the face in box d
                 shape = shape_pre(img, d)
@@ -147,7 +146,7 @@ def feature_extract_dir(predictor = False):
             face_shape_train.append(labels['face_shape'][num[i]])
 
     ##test
-    # 清空之前列表内容 放在函数中成为局部变量 不需要考虑
+    # Clear the contents of the previous list and put it in the function as a local variable
     num = []
     f_names = []
     imgs = []
@@ -155,20 +154,20 @@ def feature_extract_dir(predictor = False):
     face_shape_test = []
     eye_color_test = []
 
-    # 读df
+    # read df
     for i in test_index:
         f_name = img_path_test + labels.loc[i]['file_name']
         f_names.append(f_name)
         num.append(labels[labels.file_name == labels.loc[i]['file_name']].index.tolist()[0])
-    print(len(f_names))
+    # print(len(f_names))
 
     for i in range(len(f_names)):
         img = cv2.imread(f_names[i])
         det_sample = detector(img, 0)
         #   det_sample:  rectangles[[(45, 93) (131, 179)], [(-27, 5) (53, 77)]]
-        # 有的样本未能识别出脸 需要先过滤
+        # Some samples fail to recognise faces and need to be filtered first
         if len(det_sample) != 0:
-            # 如果识别出一个脸，生成一组x1y1x2y2，两个脸则生成两组，需要剔除掉脏数据
+            # If one face is recognized, a set of x1y1x2y2 is generated, and two faces generate two sets, and dirty data needs to be eliminated
             for k, d in enumerate(det_sample):
                 # Get the landmarks/parts for the face in box d
                 shape = shape_pre(img, d)
@@ -179,26 +178,26 @@ def feature_extract_dir(predictor = False):
 
     eye_color_test1 = np.array(eye_color_test)
     # print(face_smile1[:50])
-    print(eye_color_test1.shape)
+    # print(eye_color_test1.shape)
 
     eye_color_train1 = np.array(eye_color_train)
     # print(eye_color1)
-    print(eye_color_train1.shape)
+    # print(eye_color_train1.shape)
 
     face_shape_test1 = np.array(face_shape_test)
-    print(face_shape_test1.shape)
+    # print(face_shape_test1.shape)
 
     face_shape_train1 = np.array(face_shape_train)
-    print(face_shape_train1.shape)
+    # print(face_shape_train1.shape)
 
     face_descriptor_train1 = np.array(face_descriptor_train)
-    print(face_descriptor_train1.shape)
+    # print(face_descriptor_train1.shape)
 
     face_descriptor_test1 = np.array(face_descriptor_test)
-    print(face_descriptor_test1.shape)
+    # print(face_descriptor_test1.shape)
 
-    print(len(face_descriptor_train1[0]))
-    print(type(face_descriptor_train1[0]))
+    # print(len(face_descriptor_train1[0]))
+    # print(type(face_descriptor_train1[0]))
 
 # # Split the train and the validation set for the fitting
     x_train = face_descriptor_train1

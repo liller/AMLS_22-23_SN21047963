@@ -45,7 +45,7 @@ model_A2_SVM.train(x_train,y_train)
 SVM_A2_score = model_A2_SVM.test(x_test,y_test)
 print(f'The accuracy of SVM model(with face detector) on A2 is: {SVM_A2_score}')
 
-# 85%
+
 
 
 # B1 CNN ================================================

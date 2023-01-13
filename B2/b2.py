@@ -16,13 +16,12 @@ from keras.callbacks import ReduceLROnPlateau
 class B2_CNN:
     def __init__(self):
         # Set the CNN model
-        # my CNN architechture is In -> [[Conv2D->relu]*2 -> MaxPool2D -> Dropout]*2 -> Flatten -> Dense -> Dropout -> Out
         print("Construct CNN model =====")
         self.model = Sequential([
             Conv2D(filters=32, kernel_size=(5, 5), padding='Same',activation='relu', input_shape=(500, 500, 3)),
             Conv2D(filters=32, kernel_size=(5, 5), padding='Same',activation='relu'),
             MaxPool2D(pool_size=(2, 2)),
-            # 每一个神经元被丢弃的概率
+            #  Probability of each neuron being discarded
             Dropout(0.25),
             Conv2D(filters=64, kernel_size=(3, 3), padding='Same',activation='relu'),
             Conv2D(filters=64, kernel_size=(3, 3), padding='Same',activation='relu'),

@@ -27,9 +27,9 @@ def data_preprocessing(target_column, train_ratio = 0.80,validation_ratio = 0.10
         f_names.append(f_name)
     for i in range(len(f_names)):
         img = image.load_img(f_names[i])
-        # 将图片读取后转换为一个arry
+        # Read the image and convert it to an arry
         img2arr = image.img_to_array(img)
-        # 调整图片的维度，增加一个维度代表样本数
+        # Adjust the dimensionality of the image to add a dimension representing the number of samples
         img_di = np.expand_dims(img2arr, axis=0)
         imgs.append(img2arr)
 
@@ -47,11 +47,11 @@ def data_preprocessing(target_column, train_ratio = 0.80,validation_ratio = 0.10
     #     samples = np.array(samples).reshape(len(samples), -1)
     #     samples_genderorsmile = np.array(samples_genderorsmile)
     samples_genderorsmile = to_categorical(samples_genderorsmile, num_classes=2)
-    print(samples_genderorsmile)
+    # print(samples_genderorsmile)
 
 
     # Split the train and the validation set for the fitting
-    # random_state只要一样，划分的随机结果就是一样的
+    # As long as the random_state is the same, the random result of the division is the same
     # train is now 80% of the entire data set
     # the _junk suffix means that we drop that variable completely
     print('# Divide dataset =====')

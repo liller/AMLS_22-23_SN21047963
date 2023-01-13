@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c54398f3-f640-4a8b-8c0e-4c6b2a0f5b4c" name="Default Changelist" comment="" />
+    <list default="true" id="c54398f3-f640-4a8b-8c0e-4c6b2a0f5b4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A1/a1.py" beforeDir="false" afterPath="$PROJECT_DIR$/A1/a1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/a2.py" beforeDir="false" afterPath="$PROJECT_DIR$/A2/a2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B1/b1.py" beforeDir="false" afterPath="$PROJECT_DIR$/B1/b1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B2/b2.py" beforeDir="false" afterPath="$PROJECT_DIR$/B2/b2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/feature_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/feature_extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/pre_processing_A.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/pre_processing_A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/pre_processing_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/pre_processing_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +24,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="15">
+              <caret line="11" selection-start-line="11" selection-end-line="17" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -25,26 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/A2/a2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/opt/anaconda3/lib/python3.7/site-packages/sklearn/svm/_classes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9435">
-              <caret line="638" column="8" selection-start-line="638" selection-start-column="8" selection-end-line="638" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/opt/anaconda3/lib/python3.7/warnings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7470">
-              <caret line="498" selection-start-line="498" selection-end-line="498" />
+            <state relative-caret-position="75">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -52,17 +48,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/pre_processing_A.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="750">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/pre_processing_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-141">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="-431">
+              <caret line="62" column="36" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="62" selection-end-column="36" />
               <folding>
                 <element signature="e#1#20#0" expanded="true" />
               </folding>
@@ -73,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/feature_extraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="-889">
+              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -83,19 +79,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/B1/b1.py">
+        <entry file="file://$PROJECT_DIR$/Modules/plot_result.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+            <state relative-caret-position="105">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/B2/b2.py">
+        <entry file="file://$PROJECT_DIR$/B1/b1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="420">
+              <caret line="73" column="13" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="13" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -104,10 +103,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/B2/b2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1215">
+              <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/opt/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/A1/a1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+            <state relative-caret-position="156">
+              <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -133,7 +153,17 @@
       <find>random_seed</find>
       <find>flearnit</find>
       <find>epoch</find>
+      <find>confu</find>
+      <find>rint('exist')</find>
+      <find>result_img</find>
+      <find>print</find>
+      <find>exist</find>
+      <find>ex</find>
+      <find>path_results</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -145,14 +175,14 @@
         <option value="$PROJECT_DIR$/pre_processing.py" />
         <option value="$PROJECT_DIR$/pre_processing_A.py" />
         <option value="$PROJECT_DIR$/Modules/plot_result.py" />
-        <option value="$PROJECT_DIR$/Modules/pre_processing_A.py" />
-        <option value="$PROJECT_DIR$/Modules/feature_extraction.py" />
-        <option value="$PROJECT_DIR$/Modules/pre_processing_generator.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/A1/a1.py" />
-        <option value="$PROJECT_DIR$/A2/a2.py" />
         <option value="$PROJECT_DIR$/B1/b1.py" />
         <option value="$PROJECT_DIR$/B2/b2.py" />
+        <option value="$PROJECT_DIR$/Modules/pre_processing_generator.py" />
+        <option value="$PROJECT_DIR$/A1/a1.py" />
+        <option value="$PROJECT_DIR$/A2/a2.py" />
+        <option value="$PROJECT_DIR$/Modules/feature_extraction.py" />
+        <option value="$PROJECT_DIR$/Modules/pre_processing_A.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -163,74 +193,65 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="1440" />
     <option name="height" value="875" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="AMLS_22-23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMLS_22-23" type="462c0819:PsiDirectoryNode" />
+              <item name="AMLS_22-23_SN21047963" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMLS_22-23_SN21047963" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AMLS_22-23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMLS_22-23" type="462c0819:PsiDirectoryNode" />
+              <item name="AMLS_22-23_SN21047963" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMLS_22-23_SN21047963" type="462c0819:PsiDirectoryNode" />
               <item name="A1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AMLS_22-23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMLS_22-23" type="462c0819:PsiDirectoryNode" />
+              <item name="AMLS_22-23_SN21047963" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMLS_22-23_SN21047963" type="462c0819:PsiDirectoryNode" />
               <item name="A2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AMLS_22-23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMLS_22-23" type="462c0819:PsiDirectoryNode" />
+              <item name="AMLS_22-23_SN21047963" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMLS_22-23_SN21047963" type="462c0819:PsiDirectoryNode" />
               <item name="B1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AMLS_22-23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMLS_22-23" type="462c0819:PsiDirectoryNode" />
+              <item name="AMLS_22-23_SN21047963" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMLS_22-23_SN21047963" type="462c0819:PsiDirectoryNode" />
               <item name="B2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AMLS_22-23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMLS_22-23" type="462c0819:PsiDirectoryNode" />
+              <item name="AMLS_22-23_SN21047963" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMLS_22-23_SN21047963" type="462c0819:PsiDirectoryNode" />
               <item name="Datasets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AMLS_22-23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMLS_22-23" type="462c0819:PsiDirectoryNode" />
-              <item name="Datasets" type="462c0819:PsiDirectoryNode" />
-              <item name="cartoon_set_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AMLS_22-23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMLS_22-23" type="462c0819:PsiDirectoryNode" />
-              <item name="Datasets" type="462c0819:PsiDirectoryNode" />
-              <item name="celeba" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AMLS_22-23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AMLS_22-23" type="462c0819:PsiDirectoryNode" />
+              <item name="AMLS_22-23_SN21047963" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AMLS_22-23_SN21047963" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -350,11 +371,12 @@
       <workItem from="1672697638476" duration="4663000" />
       <workItem from="1673537097841" duration="303000" />
       <workItem from="1673550853490" duration="1922000" />
+      <workItem from="1673618714630" duration="2274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46364000" />
+    <option name="totallyTimeSpent" value="48638000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,14 +388,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1440" height="875" extended-state="0" />
+    <frame x="-5" y="25" width="1440" height="875" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990403" visible="true" weight="0.27038628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990403" visible="true" weight="0.2739628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5009597" side_tool="true" weight="0.26323318" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785408" weight="0.32947233" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785408" visible="true" weight="0.32947233" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398167" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -398,6 +421,7 @@
     <SUITE FILE_PATH="coverage/AMLS_22_23$a1.coverage" NAME="a1 Coverage Results" MODIFIED="1671022914899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/A1" />
     <SUITE FILE_PATH="coverage/AMLS_22_23$pre_processing_generator.coverage" NAME="pre_processing_generator Coverage Results" MODIFIED="1671035514886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Modules" />
     <SUITE FILE_PATH="coverage/AMLS_22_23$main.coverage" NAME="main Coverage Results" MODIFIED="1673551180758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AMLS_22_23_SN21047963$main.coverage" NAME="main Coverage Results" MODIFIED="1673620110634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/opt/anaconda3/lib/python3.7/site-packages/keras/engine/training_utils.py">
@@ -452,13 +476,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/-594128569/_dlib_pybind11/__init__.py" />
-    <entry file="file://$USER_HOME$/opt/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/opt/anaconda3/lib/python3.7/site-packages/numpy/matrixlib/defmatrix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -471,16 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/plot_result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,67 +561,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/feature_extraction.py">
+    <entry file="file://$USER_HOME$/opt/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A1/a1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A2/a2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/B1/b1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+        <state relative-caret-position="165">
+          <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/B2/b2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="1215">
+          <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/pre_processing_A.py">
+    <entry file="file://$PROJECT_DIR$/Modules/pre_processing_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="-431">
+          <caret line="62" column="36" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="62" selection-end-column="36" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/pre_processing_generator.py">
+    <entry file="file://$PROJECT_DIR$/Modules/pre_processing_A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="750">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/feature_extraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-889">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
           <folding>
-            <element signature="e#1#20#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/B1/b1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/plot_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A2/a2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A1/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="11" selection-start-line="11" selection-end-line="17" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
