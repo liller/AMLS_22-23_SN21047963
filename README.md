@@ -54,7 +54,7 @@ The current project structure is shown below
 **pre_processing_A.py**: Perform image processing such as normalization and greyscaling on the image data in Task A. Divide the training set, validation set and test set.  
 
 **pre_processing_generator.py**: Perform image processing such as normalization and greyscaling on the image data in Task A. Divide the training set, validation set and test set. Note that when dividing the test and training sets, the generator needs different paths for the training data and the test data, so it needs to randomly select 1000 images and put them in the new path, and delete them from the original path.
-**plot_result.py**: Plotting accuracy results and loss value curves, plotting prediction result chaos matrix.
+**plot_result.py**: Plotting accuracy results and loss value curves, plotting prediction result confusion matrix.
 
 **shape_predictor_68_face_landmarks.dat**: shape_predictor() is a tool that takes in an image region containing some object and outputs a set of point locations that define the pose of the object. 
 
